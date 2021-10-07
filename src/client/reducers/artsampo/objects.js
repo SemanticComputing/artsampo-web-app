@@ -49,6 +49,42 @@ export const INITIAL_STATE = {
       numberedList: false,
       minWidth: 150
     },
+    {
+      id: 'classification',
+      valueType: 'string',
+      makeLink: true,
+      externalLink: false,
+      sortValues: true,
+      numberedList: false,
+      minWidth: 150
+    },
+    {
+      id: 'responsibleOrganisation',
+      valueType: 'string',
+      makeLink: true,
+      externalLink: false,
+      sortValues: true,
+      numberedList: false,
+      minWidth: 150
+    },
+    {
+      id: 'material',
+      valueType: 'string',
+      makeLink: true,
+      externalLink: false,
+      sortValues: true,
+      numberedList: false,
+      minWidth: 150
+    },
+    {
+      id: 'keyword',
+      valueType: 'string',
+      makeLink: true,
+      externalLink: false,
+      sortValues: true,
+      numberedList: false,
+      minWidth: 150
+    },
   ]
 }
 

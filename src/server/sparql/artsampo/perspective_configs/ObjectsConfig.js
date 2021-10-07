@@ -48,6 +48,32 @@ export const objectsConfig = {
       type: 'list',
       literal: 'true'
     },
-
+    classification: {
+      id: 'classification',
+      facetValueFilter: '',
+      label: 'Classification',
+      labelPath: ':classification',
+      predicate: ':classification',
+      type: 'list',
+      literal: 'true'
+    },
+    material: {
+      id: 'material',
+      facetValueFilter: '',
+      label: 'Material',
+      labelPath: ':material',
+      predicate: ':material',
+      type: 'list',
+      literal: 'true'
+    },
+    keyword: {
+      id: 'keyword',
+      facetValueFilter: '',
+      label: 'Keyword',
+      labelPath: ':keyword',
+      predicate: ':keyword',
+      type: 'list',
+      literal: 'true'
+    },
   }
 }

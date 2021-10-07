@@ -27,11 +27,36 @@ export const objectPropertiesFacetResults =
      }
      UNION
      {
-       ?id dct:source ?source__id .
-       ?source__id skos:prefLabel ?source__prefLabel .
-       ?source__id mmm-schema:data_provider_url ?source__dataProviderUrl .
+       ?id :artist ?artist__id .
+       ?artist__id skos:prefLabel ?artist__prefLabel .
+       #?source__id mmm-schema:data_provider_url ?source__dataProviderUrl .
      }
-
+     UNION
+     {
+       ?id :dimensionUnit ?dimensionUnit .
+     }
+     UNION
+     {
+       ?id :keyword ?keyword .
+     }
+     UNION
+     {
+       ?id :material ?material .
+     }
+     UNION
+     {
+       ?id :classification ?classification .
+     }
+     UNION
+     {
+       ?id :responsibleOrganisation ?responsibleOrganisation .
+     }
+     #UNION
+     #{
+      # ?id ^crm:P46i_forms_part_of ?manuscript__id .
+       #?manuscript__id skos:prefLabel ?manuscript__prefLabel .
+      # BIND(CONCAT("/${perspectiveID}/page/", REPLACE(STR(?manuscript__id), "^.*\\\\/(.+)", "$1")) AS ?manuscript__dataProviderUrl)
+     #}
 `
 
 export const knowledgeGraphMetadataQuery = `
