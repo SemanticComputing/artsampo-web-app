@@ -9,15 +9,15 @@ import leafletMap from './general/leafletMap'
 import fullTextSearch from './sampo/fullTextSearch'
 import clientSideFacetedSearch from './sampo/clientSideFacetedSearch'
 
-import collections from './artsampo/collections'
-import collectionsFacets from './artsampo/collectionsFacets'
-import collectionsFacetsConstrainSelf from './artsampo/collectionsFacetsConstrainSelf'
+import objects from './artsampo/objects'
+import objectsFacets from './artsampo/objectsFacets'
+import objectsFacetsConstrainSelf from './artsampo/objectsFacetsConstrainSelf'
 
 
 const reducer = combineReducers({
-  collections,
-  collectionsFacets,
-  collectionsFacetsConstrainSelf,
+  objects,
+  objectsFacets,
+  objectsFacetsConstrainSelf,
   leafletMap,
   animation,
   options,

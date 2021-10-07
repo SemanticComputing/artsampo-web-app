@@ -4,7 +4,7 @@ import {
 } from '../sparql_queries/SparqlQueriesPerspective1'
 import { prefixes } from '../sparql_queries/SparqlQueriesPrefixes'
 
-export const collectionsConfig = {
+export const objectsConfig = {
   endpoint: {
     url: 'http://localhost:3048/ds/sparql',
     prefixes,

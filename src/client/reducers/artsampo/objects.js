@@ -53,13 +53,13 @@ export const INITIAL_STATE = {
 }
 
 const resultClasses = new Set([
-  'collections',
+  'objects',
 ])
 
-const collections = (state = INITIAL_STATE, action) => {
+const objects = (state = INITIAL_STATE, action) => {
   if (resultClasses.has(action.resultClass)) {
     return handleDataFetchingAction(state, action, INITIAL_STATE)
   } else return state
 }
 
-export default collections
+export default objects

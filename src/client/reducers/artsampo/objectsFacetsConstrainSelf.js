@@ -1,4 +1,4 @@
-import { handleFacetAction } from '../general/facets'
+import { handleFacetConstrainSelfAction } from '../general/facetsConstrainSelf'
 
 export const INITIAL_STATE = {
   updatedFacet: null,
@@ -32,25 +32,6 @@ export const INITIAL_STATE = {
       sortDirection: 'desc',
       sortButton: true,
       spatialFilterButton: false,
-      pieChartButton: false,
-      isFetching: false,
-      searchField: true,
-      containerClass: 'ten',
-      filterType: 'uriFilter',
-      uriFilter: null,
-      priority: 4
-    },
-    responsibleOrganisation: {
-      id: 'responsibleOrganisation',
-      // predicate: defined in backend
-      distinctValueCount: 0,
-      values: [],
-      flatValues: [],
-      sortBy: 'instanceCount',
-      sortDirection: 'desc',
-      sortButton: true,
-      spatialFilterButton: false,
-      pieChartButton: false,
       isFetching: false,
       searchField: true,
       containerClass: 'ten',
@@ -61,10 +42,10 @@ export const INITIAL_STATE = {
   }
 }
 
-const collectionsFacets = (state = INITIAL_STATE, action) => {
-  if (action.facetClass === 'collections') {
-    return handleFacetAction(state, action, INITIAL_STATE)
+const objectsFacetsConstrainself = (state = INITIAL_STATE, action) => {
+  if (action.facetClass === 'objects') {
+    return handleFacetConstrainSelfAction(state, action, INITIAL_STATE)
   } else return state
 }
 
-export default collectionsFacets
+export default objectsFacetsConstrainself

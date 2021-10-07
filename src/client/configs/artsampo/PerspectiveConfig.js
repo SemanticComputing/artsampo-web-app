@@ -17,7 +17,7 @@ import placesImage from '../../img/main_page/places-452x262.jpg'
 
 export const perspectiveConfig = [
   {
-    id: 'collections',
+    id: 'objects',
     frontPageImage: manuscriptsImage,
     defaultActiveFacets: new Set([]),
     defaultTab: 'table',

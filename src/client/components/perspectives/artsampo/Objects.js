@@ -26,7 +26,7 @@ const ApexChart = lazy(() => import('../../facet_results/ApexChart'))
 const Network = lazy(() => import('../../facet_results/Network'))
 const Export = lazy(() => import('../../facet_results/Export'))
 
-const Collections = props => {
+const Objects = props => {
   const { rootUrl, perspective, screenSize } = props
   const layerControlExpanded = screenSize === 'md' ||
     screenSize === 'lg' ||
@@ -57,8 +57,8 @@ const Collections = props => {
           <ResultTable
             data={props.perspectiveState}
             facetUpdateID={props.facetState.facetUpdateID}
-            resultClass='collections'
-            facetClass='collections'
+            resultClass='objects'
+            facetClass='objects'
             fetchPaginatedResults={props.fetchPaginatedResults}
             updatePage={props.updatePage}
             updateRowsPerPage={props.updateRowsPerPage}
@@ -85,7 +85,7 @@ const Collections = props => {
   )
 }
 
-Collections.propTypes = {
+Objects.propTypes = {
   /**
    * Faceted search configs and results of this perspective.
    */
@@ -177,4 +177,4 @@ Collections.propTypes = {
   layoutConfig: PropTypes.object.isRequired
 }
 
-export default Collections
+export default Objects

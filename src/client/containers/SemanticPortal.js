@@ -623,9 +623,9 @@ const SemanticPortal = props => {
 const mapStateToProps = state => {
   const { clientFSResults, clientFSFacetValues } = filterResults(state.clientSideFacetedSearch)
   return {
-    collectionsFacets: state.collectionsFacets,
-    collectionsFacetsConstrainSelf: state.collectionsFacetsConstrainSelf,
-    collections: state.collections,
+    objectsFacets: state.objectsFacets,
+    objectsFacetsConstrainSelf: state.objectsFacetsConstrainSelf,
+    objects: state.objects,
     leafletMap: state.leafletMap,
     fullTextSearch: state.fullTextSearch,
     clientFSState: state.clientSideFacetedSearch,
@@ -683,15 +683,15 @@ SemanticPortal.propTypes = {
   /**
    * Faceted search configs and results of 'Perspective 1'.
    */
-  collections: PropTypes.object.isRequired,
+  objects: PropTypes.object.isRequired,
   /**
    * Facet configs and values of 'Perspective 1'.
    */
-  collectionsFacets: PropTypes.object.isRequired,
+  objectsFacets: PropTypes.object.isRequired,
   /**
    * Facet configs and values for facets that restrict themselves of 'Perspective 1'.
    */
-  collectionsFacetsConstrainSelf: PropTypes.object.isRequired,
+  objectsFacetsConstrainSelf: PropTypes.object.isRequired,
   /**
    * Redux action for fetching all faceted search results.
    */

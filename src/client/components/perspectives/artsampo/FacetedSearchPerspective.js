@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 // import Finds from './Finds'
 // import EmloActors from './EmloActors'
 // import Hellerau from './Hellerau'
-const Collections = lazy(() => import('./Collections'))
+const Objects = lazy(() => import('./Objects'))
 
 
 /**
@@ -16,9 +16,9 @@ const FacetedSearchPerspective = props => {
   const renderPerspective = () => {
     let perspectiveElement = null
     switch (props.perspective.id) {
-      case 'collections':
+      case 'objects':
         perspectiveElement =
-          <Collections {...props} />
+          <Objects {...props} />
         break
       default:
         perspectiveElement = <div />

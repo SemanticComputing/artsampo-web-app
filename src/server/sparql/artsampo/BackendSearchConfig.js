@@ -1,4 +1,4 @@
-import { collectionsConfig } from './perspective_configs/CollectionsConfig'
+import { objectsConfig } from './perspective_configs/ObjectsConfig'
 import {
   productionPlacesQuery,
   lastKnownLocationsQuery,
@@ -26,5 +26,5 @@ import {
 } from '../Mappers'
 
 export const backendSearchConfig = {
-  collections: collectionsConfig,
+  objects: objectsConfig,
 }
