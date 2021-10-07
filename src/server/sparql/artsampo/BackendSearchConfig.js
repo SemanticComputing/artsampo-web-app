@@ -1,19 +1,9 @@
 import { objectsConfig } from './perspective_configs/ObjectsConfig'
 import {
-  productionPlacesQuery,
-  lastKnownLocationsQuery,
-  migrationsQuery,
-  migrationsDialogQuery,
-  manuscriptPropertiesInstancePage,
-  expressionProperties,
-  collectionProperties,
-  productionsByDecadeQuery,
-  eventsByDecadeQuery,
-  manuscriptInstancePageNetworkLinksQuery,
-  manuscriptFacetResultsNetworkLinksQuery,
-  manuscriptNetworkNodesQuery,
+  objectPropertiesInstancePage,
+  objectPropertiesFacetResuts,
   knowledgeGraphMetadataQuery
-} from './sparql_queries/SparqlQueriesPerspective1'
+} from './sparql_queries/SparqlQueriesObjects'
 import { federatedSearchDatasets } from './sparql_queries/SparqlQueriesFederatedSearch'
 import { fullTextSearchProperties } from './sparql_queries/SparqlQueriesFullText'
 import { sitemapInstancePageQuery } from '../SparqlQueriesGeneral'

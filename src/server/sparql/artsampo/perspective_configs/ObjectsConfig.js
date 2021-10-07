@@ -1,7 +1,7 @@
 import {
-  manuscriptPropertiesFacetResults,
-  manuscriptPropertiesInstancePage
-} from '../sparql_queries/SparqlQueriesPerspective1'
+  objectPropertiesFacetResults,
+  objectPropertiesInstancePage
+} from '../sparql_queries/SparqlQueriesObjects'
 import { prefixes } from '../sparql_queries/SparqlQueriesPrefixes'
 
 export const objectsConfig = {
@@ -16,10 +16,10 @@ export const objectsConfig = {
   //   <SUBJECT> dct:source mmm-schema:Bibale .
   // `,
   paginatedResults: {
-    properties: manuscriptPropertiesFacetResults
+    properties: objectPropertiesFacetResults
   },
   instance: {
-    properties: manuscriptPropertiesInstancePage,
+    properties: objectPropertiesInstancePage,
     relatedInstances: '',
     defaultTab: 'table'
   },
