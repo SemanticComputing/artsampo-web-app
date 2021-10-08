@@ -78,50 +78,11 @@ class InstanceHomePage extends React.Component {
     const localID = this.getLocalIDFromURL()
     this.setState({ localID })
     let uri = ''
-    const base = 'http://ldf.fi/mmm'
+    const base = 'http://ldf.fi/artsampo'
     const resultClass = perspectiveConfig.id
     switch (resultClass) {
-      case 'perspective1':
-        uri = `${base}/manifestation_singleton/${localID}`
-        break
-      case 'perspective2':
-        uri = `${base}/work/${localID}`
-        break
-      case 'perspective3':
-        uri = `${base}/event/${localID}`
-        break
-      case 'manuscripts':
-        uri = `${base}/manifestation_singleton/${localID}`
-        break
-      case 'expressions':
-        uri = `${base}/expression/${localID}`
-        break
-      case 'collections':
-        uri = `${base}/collection/${localID}`
-        break
-      case 'works':
-        uri = `${base}/work/${localID}`
-        break
-      case 'events':
-        uri = `${base}/event/${localID}`
-        break
-      case 'actors':
-        uri = `${base}/actor/${localID}`
-        break
-      case 'places':
-        uri = `${base}/place/${localID}`
-        break
-      case 'finds':
-        uri = `http://ldf.fi/findsampo/finds/${localID}`
-        break
-      case 'emloActors':
-        uri = `http://emlo.bodleian.ox.ac.uk/id/${localID}`
-        break
-      case 'emloLetters':
-        uri = `http://emlo.bodleian.ox.ac.uk/id/${localID}`
-        break
-      case 'emloPlaces':
-        uri = `http://emlo.bodleian.ox.ac.uk/id/${localID}`
+      case 'objects':
+        uri = `${base}/fng/${localID}`
         break
     }
     this.props.fetchByURI({

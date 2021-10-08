@@ -1,18 +1,39 @@
 const perspectiveID = 'objects'
 
 export const objectPropertiesInstancePage =
-`   {
+  ` {
       ?id skos:prefLabel ?prefLabel__id .
       BIND (?prefLabel__id as ?prefLabel__prefLabel)
+      BIND(CONCAT("/objects/page/", ENCODE_FOR_URI(REPLACE(STR(?id), "^.*\\\\/(.+)", "$1"))) AS ?prefLabel__dataProviderUrl)
       BIND(?id as ?uri__id)
       BIND(?id as ?uri__dataProviderUrl)
       BIND(?id as ?uri__prefLabel)
     }
     UNION
     {
-      ?id mmm-schema:data_provider_url ?source__id .
-      BIND (?source__id AS ?source__prefLabel)
-      BIND (?source__id AS ?source__dataProviderUrl)
+      ?id :artist ?artist__id .
+      ?artist__id skos:prefLabel ?artist__prefLabel .
+      #?source__id mmm-schema:data_provider_url ?source__dataProviderUrl .
+    }
+    UNION
+    {
+      ?id :dimensionUnit ?dimensionUnit .
+    }
+    UNION
+    {
+      ?id :keyword ?keyword .
+    }
+    UNION
+    {
+      ?id :material ?material .
+    }
+    UNION
+    {
+      ?id :classification ?classification .
+    }
+    UNION
+    {
+      ?id :responsibleOrganisation ?responsibleOrganisation .
     }
 `
 
@@ -20,7 +41,7 @@ export const objectPropertiesFacetResults =
  `  {
        ?id skos:prefLabel ?prefLabel__id .
        BIND (?prefLabel__id as ?prefLabel__prefLabel)
-       BIND(CONCAT("/collections/page/", ENCODE_FOR_URI(REPLACE(STR(?id), "^.*\\\\/(.+)", "$1"))) AS ?prefLabel__dataProviderUrl)
+       BIND(CONCAT("/objects/page/", ENCODE_FOR_URI(REPLACE(STR(?id), "^.*\\\\/(.+)", "$1"))) AS ?prefLabel__dataProviderUrl)
        BIND(?id as ?uri__id)
        BIND(?id as ?uri__dataProviderUrl)
        BIND(?id as ?uri__prefLabel)
