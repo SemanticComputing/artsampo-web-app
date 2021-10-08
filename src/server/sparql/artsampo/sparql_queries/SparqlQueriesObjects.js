@@ -35,6 +35,16 @@ export const objectPropertiesInstancePage =
     {
       ?id :responsibleOrganisation ?responsibleOrganisation .
     }
+    UNION
+    {
+      ?id :inventoryNumber ?inventoryNumber .
+    }
+    UNION
+    {
+      ?id :objectId ?fngId__id .
+      BIND (CONCAT('https://www.kansallisgalleria.fi/en/object/', STR(?fngId__id)) AS ?fngId__prefLabel)
+      BIND (CONCAT('https://www.kansallisgalleria.fi/en/object/', STR(?fngId__id)) AS ?fngId__dataProviderUrl)
+    }
 `
 
 export const objectPropertiesFacetResults =

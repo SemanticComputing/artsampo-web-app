@@ -226,6 +226,14 @@
           "label": "Responsible organisation",
           "description": ""
         },
+        "fngId": {
+          "label": "Link to FNG page",
+          "description": "Object on FNG pages."
+        },
+        "inventoryNumber": {
+          "label": "Inventory number",
+          "description": ""
+        },
         "keyword": {
           "label": "Keyword",
           "description": ""
