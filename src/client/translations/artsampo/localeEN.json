@@ -7,7 +7,7 @@
   "appTitle": {
     "short": "ArtSampo",
     "mobile": "Art",
-    "long": "&nbsp; &nbsp; ArtSampo &nbsp; &nbsp;",
+    "long": "ArtSampo",
     "subheading": "The open data of the Finnish National Gallery."
   },
   "appDescription1": "Sampo is a web service for searching and studying place names. The search results can be viewed as a table, on maps, and as statistical distributions. Historical and current background maps are provided.",
@@ -233,6 +233,18 @@
         "inventoryNumber": {
           "label": "Inventory number",
           "description": ""
+        },
+        "width": {
+          "label": "Width",
+          "description": "Width in cm"
+        },
+        "length": {
+          "label": "Length",
+          "description": "Length in cm."
+        },
+        "yearFrom": {
+          "label": "Creation year",
+          "description": "Earliest creation year"
         },
         "keyword": {
           "label": "Keyword",

@@ -75,5 +75,28 @@ export const objectsConfig = {
       type: 'list',
       literal: 'true'
     },
+    yearFrom: {
+      id: 'yearFrom',
+      facetValueFilter: '',
+      labelPath: ':yearFrom',
+      predicate: ':yearFrom',
+      type: 'integer'
+    },
+    width: {
+      id: 'width',
+      facetValueFilter: '',
+      labelPath: ':widtht',
+      predicate: ':width',
+      type: 'integer',
+      typecasting: 'BIND(xsd:integer(ROUND(?value)) as ?valueAsInteger)'
+    },
+    length: {
+      id: 'height',
+      facetValueFilter: '',
+      labelPath: ':length',
+      predicate: ':length',
+      type: 'integer',
+      typecasting: 'BIND(xsd:integer(ROUND(?value)) as ?valueAsInteger)'
+    }
   }
 }

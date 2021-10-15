@@ -13,7 +13,6 @@ import objects from './artsampo/objects'
 import objectsFacets from './artsampo/objectsFacets'
 import objectsFacetsConstrainSelf from './artsampo/objectsFacetsConstrainSelf'
 
-
 const reducer = combineReducers({
   objects,
   objectsFacets,
