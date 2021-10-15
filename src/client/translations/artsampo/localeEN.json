@@ -72,6 +72,20 @@
       }
     }
   },
+  "apexCharts": {
+    "by": "by",
+    "property": "X-axis:",
+    "numberOfFinds": "Number of objects",
+    "chartType": "Chart type:",
+    "pie": "pie chart",
+    "bar": "bar chart",
+    "resultClasses": {
+      "objectsByMaterial": "material"
+    },
+    "findsByWidthXaxis": "Width (mm)",
+    "findsByLengthXaxis": "Length (mm)",
+    "findsByWeightXaxis": "Weight (g)"
+  },
   "tabs": {
     "table": "table",
     "map": "map",

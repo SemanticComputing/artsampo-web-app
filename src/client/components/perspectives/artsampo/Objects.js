@@ -19,6 +19,9 @@ import {
 } from '../../../configs/sampo/ApexCharts/LineChartConfig'
 import { coseLayout, cytoscapeStyle, preprocess } from '../../../configs/sampo/Cytoscape.js/NetworkConfig'
 import { layerConfigs, createPopUpContentMMM } from '../../../configs/sampo/Leaflet/LeafletConfig'
+import { createApexPieChartData } from '../../../configs/sampo/ApexCharts/PieChartConfig'
+import { createApexBarChartData } from '../../../configs/sampo/ApexCharts/BarChartConfig'
+
 const ResultTable = lazy(() => import('../../facet_results/ResultTable'))
 const LeafletMap = lazy(() => import('../../facet_results/LeafletMap'))
 const Deck = lazy(() => import('../../facet_results/Deck'))
@@ -65,6 +68,32 @@ const Objects = props => {
             sortResults={props.sortResults}
             routeProps={routeProps}
             rootUrl={rootUrl}
+            layoutConfig={props.layoutConfig}
+          />}
+      />
+      <Route
+        path={`${rootUrl}/${perspective.id}/faceted-search/pie_chart`}
+        render={() =>
+          <ApexChart
+            pageType='facetResults'
+            rawData={props.perspectiveState.results}
+            rawDataUpdateID={props.perspectiveState.resultUpdateID}
+            facetUpdateID={props.facetState.facetUpdateID}
+            fetching={props.perspectiveState.fetching}
+            fetchData={props.fetchResults}
+            createChartData={createApexPieChartData}
+            dropdownForChartTypes
+            chartTypes={[
+              { id: 'pie', createChartData: createApexPieChartData },
+              { id: 'bar', createChartData: createApexBarChartData }
+            ]}
+            yaxisTitle='Number of finds'
+            resultClass='objectsByMaterial'
+            facetClass='objects'
+            dropdownForResultClasses
+            resultClasses={['objectsByMaterial']}
+            doNotRenderOnMount
+            screenSize={props.screenSize}
             layoutConfig={props.layoutConfig}
           />}
       />

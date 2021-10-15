@@ -26,6 +26,11 @@ export const perspectiveConfig = [
         value: 0,
         icon: <CalendarViewDayIcon />
       },
+      {
+        id: 'pie_chart',
+        value: 1,
+        icon: <PieChartIcon />
+      }
     ],
     instancePageTabs: [
       {

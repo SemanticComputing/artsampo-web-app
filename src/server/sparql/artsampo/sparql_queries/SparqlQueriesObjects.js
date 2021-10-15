@@ -138,3 +138,16 @@ export const knowledgeGraphMetadataQuery = `
                       dct:modified ?databaseDump__modified .
   }
 `
+
+export const objectsByMaterialQuery = `
+ SELECT ?category ?prefLabel
+ (COUNT(DISTINCT ?object) as ?instanceCount)
+  WHERE {
+    <FILTER>
+    ?object a :Object .
+    ?object :material ?category .
+    BIND (?category AS ?prefLabel )
+  }
+  GROUP BY ?category ?prefLabel
+  ORDER BY DESC(?instanceCount)
+`
