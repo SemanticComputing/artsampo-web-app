@@ -85,7 +85,7 @@ export const objectsConfig = {
     width: {
       id: 'width',
       facetValueFilter: '',
-      labelPath: ':widtht',
+      labelPath: ':width',
       predicate: ':width',
       type: 'integer',
       typecasting: 'BIND(xsd:integer(ROUND(?value)) as ?valueAsInteger)'
