@@ -87,11 +87,11 @@ const Objects = props => {
               { id: 'pie', createChartData: createApexPieChartData },
               { id: 'bar', createChartData: createApexBarChartData }
             ]}
-            yaxisTitle='Number of finds'
-            resultClass='objectsByMaterial'
+            yaxisTitle='Number of objects'
+            resultClass='objectsByArtist'
             facetClass='objects'
             dropdownForResultClasses
-            resultClasses={['objectsByMaterial']}
+            resultClasses={['objectsByMaterial', 'objectsByArtist']}
             doNotRenderOnMount
             screenSize={props.screenSize}
             layoutConfig={props.layoutConfig}

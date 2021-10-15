@@ -3,7 +3,8 @@ import {
   objectPropertiesInstancePage,
   objectPropertiesFacetResuts,
   knowledgeGraphMetadataQuery,
-  objectsByMaterialQuery
+  objectsByMaterialQuery,
+  objectsByArtistQuery
 } from './sparql_queries/SparqlQueriesObjects'
 import { federatedSearchDatasets } from './sparql_queries/SparqlQueriesFederatedSearch'
 import { fullTextSearchProperties } from './sparql_queries/SparqlQueriesFullText'
@@ -22,7 +23,13 @@ export const backendSearchConfig = {
   objectsByMaterial: {
     perspectiveID: 'objects', // use endpoint config from finds
     q: objectsByMaterialQuery,
-    filterTarget: 'find',
+    filterTarget: 'object',
+    resultMapper: mapPieChart
+  },
+  objectsByArtist: {
+    perspectiveID: 'objects', // use endpoint config from finds
+    q: objectsByArtistQuery,
+    filterTarget: 'object',
     resultMapper: mapPieChart
   }
 }

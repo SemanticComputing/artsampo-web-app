@@ -151,3 +151,16 @@ export const objectsByMaterialQuery = `
   GROUP BY ?category ?prefLabel
   ORDER BY DESC(?instanceCount)
 `
+
+export const objectsByArtistQuery = `
+ SELECT ?category ?prefLabel
+ (COUNT(DISTINCT ?object) as ?instanceCount)
+  WHERE {
+    <FILTER>
+    ?object a :Object .
+    ?object :artist ?category .
+    ?category skos:prefLabel ?prefLabel .
+  }
+  GROUP BY ?category ?prefLabel
+  ORDER BY DESC(?instanceCount)
+`

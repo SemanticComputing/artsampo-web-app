@@ -80,7 +80,8 @@
     "pie": "pie chart",
     "bar": "bar chart",
     "resultClasses": {
-      "objectsByMaterial": "material"
+      "objectsByMaterial": "material",
+      "objectsByArtist": "Author"
     },
     "findsByWidthXaxis": "Width (mm)",
     "findsByLengthXaxis": "Length (mm)",

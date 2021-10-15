@@ -134,7 +134,7 @@ export const INITIAL_STATE = {
 }
 
 const resultClasses = new Set([
-  'objects', 'objectsByMaterial'
+  'objects', 'objectsByMaterial', 'objectsByArtist'
 ])
 
 const objects = (state = INITIAL_STATE, action) => {
