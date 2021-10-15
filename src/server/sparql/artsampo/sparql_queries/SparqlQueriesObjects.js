@@ -45,6 +45,18 @@ export const objectPropertiesInstancePage =
       BIND (CONCAT('https://www.kansallisgalleria.fi/en/object/', STR(?fngId__id)) AS ?fngId__prefLabel)
       BIND (CONCAT('https://www.kansallisgalleria.fi/en/object/', STR(?fngId__id)) AS ?fngId__dataProviderUrl)
     }
+    UNION
+    {
+      ?id :width ?width .
+    }
+    UNION
+    {
+      ?id :length ?length .
+    }
+    UNION
+    {
+      ?id :yearFrom ?yearFrom .
+    }
 `
 
 export const objectPropertiesFacetResults =
@@ -81,6 +93,28 @@ export const objectPropertiesFacetResults =
      UNION
      {
        ?id :responsibleOrganisation ?responsibleOrganisation .
+     }
+     UNION
+     {
+       ?id :objectId ?fngId__id .
+       BIND (CONCAT('https://www.kansallisgalleria.fi/en/object/', STR(?fngId__id)) AS ?fngId__prefLabel)
+       BIND (CONCAT('https://www.kansallisgalleria.fi/en/object/', STR(?fngId__id)) AS ?fngId__dataProviderUrl)
+     }
+     UNION
+     {
+       ?id :inventoryNumber ?inventoryNumber .
+     }
+     UNION
+     {
+       ?id :width ?width .
+     }
+     UNION
+     {
+       ?id :length ?length .
+     }
+     UNION
+     {
+       ?id :yearFrom ?yearFrom .
      }
      #UNION
      #{

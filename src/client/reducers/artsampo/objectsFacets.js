@@ -150,7 +150,7 @@ export const INITIAL_STATE = {
       integerFilter: null,
       unit: 'year',
       priority: 12
-    },
+    }
   }
 }
 

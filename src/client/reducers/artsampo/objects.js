@@ -95,7 +95,16 @@ export const INITIAL_STATE = {
       minWidth: 150
     },
     {
-      id: 'inventoryNumber',
+      id: 'yearFrom',
+      valueType: 'string',
+      makeLink: true,
+      externalLink: true,
+      sortValues: true,
+      numberedList: false,
+      minWidth: 150
+    },
+    {
+      id: 'width',
       valueType: 'string',
       makeLink: true,
       externalLink: false,
@@ -103,11 +112,29 @@ export const INITIAL_STATE = {
       numberedList: false,
       minWidth: 150
     },
+    {
+      id: 'length',
+      valueType: 'string',
+      makeLink: true,
+      externalLink: false,
+      sortValues: true,
+      numberedList: false,
+      minWidth: 150
+    },
+    {
+      id: 'inventoryNumber',
+      valueType: 'string',
+      makeLink: true,
+      externalLink: false,
+      sortValues: true,
+      numberedList: false,
+      minWidth: 150
+    }
   ]
 }
 
 const resultClasses = new Set([
-  'objects',
+  'objects'
 ])
 
 const objects = (state = INITIAL_STATE, action) => {
