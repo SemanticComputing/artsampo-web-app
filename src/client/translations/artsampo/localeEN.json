@@ -203,9 +203,74 @@
       }
     },
     "objects": {
-      "label": "Art Objects",
+      "label": "Objects",
       "facetResultsType": "objects",
       "shortDescription": "Search Art Object in the collections of the Finnish National Gallery",
+      "longDescription": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> ",
+      "instancePage": {
+        "label": "Art Object",
+        "description": ""
+      },
+      "properties": {
+        "uri": {
+          "label": "URI",
+          "description": "Uniform Resource Identifier"
+        },
+        "prefLabel": {
+          "label": "Label",
+          "description": "A short label describing the work of art.",
+          "textFacetInputPlaceholder": "Search..."
+        },
+        "author": {
+          "label": "Author",
+          "description": "The author(s) who have contributed to the intellectual content ."
+        },
+        "artist": {
+          "label": "Artist",
+          "description": "The author of the art object."
+        },
+        "classification": {
+          "label": "Classification",
+          "description": "Classification."
+        },
+        "material": {
+          "label": "Material",
+          "description": "Material."
+        },
+        "responsibleOrganisation": {
+          "label": "Responsible organisation",
+          "description": ""
+        },
+        "fngId": {
+          "label": "Link to FNG page",
+          "description": "Object on FNG pages."
+        },
+        "inventoryNumber": {
+          "label": "Inventory number",
+          "description": ""
+        },
+        "width": {
+          "label": "Width",
+          "description": "Width in cm"
+        },
+        "length": {
+          "label": "Length",
+          "description": "Length in cm."
+        },
+        "yearFrom": {
+          "label": "Creation year",
+          "description": "Earliest creation year"
+        },
+        "keyword": {
+          "label": "Keyword",
+          "description": ""
+        }
+      }
+    },
+    "persons": {
+      "label": "Artists",
+      "facetResultsType": "artists",
+      "shortDescription": "Search Artists",
       "longDescription": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> ",
       "instancePage": {
         "label": "Art Object",

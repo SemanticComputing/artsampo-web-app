@@ -146,7 +146,7 @@ export const objectsByMaterialQuery = `
     <FILTER>
     ?object a :Object .
     ?object :material ?category .
-    BIND (?category AS ?prefLabel )
+    BIND (CONCAT(?category, ' ') AS ?prefLabel )
   }
   GROUP BY ?category ?prefLabel
   ORDER BY DESC(?instanceCount)
