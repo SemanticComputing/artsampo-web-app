@@ -12,7 +12,7 @@ import artistImage from '../../img/main_page/helene.jpg'
 // import BubbleChartIcon from '@material-ui/icons/BubbleChart'
 // import LineChartIcon from '@material-ui/icons/ShowChart'
 
-import objectsImage from '../../img/main_page/luxemburg.jpg'
+import objectsImage from '../../img/main_page/sampo.jpg'
 
 export const perspectiveConfig = [
   {
