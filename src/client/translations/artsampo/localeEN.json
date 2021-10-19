@@ -81,7 +81,10 @@
     "bar": "bar chart",
     "resultClasses": {
       "objectsByMaterial": "material",
-      "objectsByArtist": "Author"
+      "objectsByArtist": "Author",
+      "objectsByClassification": "Classification",
+      "objectsByOrganization": "Organization",
+      "objectsByKeyword": "Keyword"
     },
     "findsByWidthXaxis": "Width (mm)",
     "findsByLengthXaxis": "Length (mm)",
@@ -89,6 +92,7 @@
   },
   "tabs": {
     "table": "table",
+    "pie_chart": "chart",
     "map": "map",
     "production_places": "production places",
     "production_places_heatmap": "production heatmap",

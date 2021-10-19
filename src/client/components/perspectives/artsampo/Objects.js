@@ -91,7 +91,7 @@ const Objects = props => {
             resultClass='objectsByArtist'
             facetClass='objects'
             dropdownForResultClasses
-            resultClasses={['objectsByMaterial', 'objectsByArtist']}
+            resultClasses={['objectsByArtist', 'objectsByMaterial', 'objectsByClassification', 'objectsByKeyword', 'objectsByOrganization']}
             doNotRenderOnMount
             screenSize={props.screenSize}
             layoutConfig={props.layoutConfig}

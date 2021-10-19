@@ -164,3 +164,42 @@ export const objectsByArtistQuery = `
   GROUP BY ?category ?prefLabel
   ORDER BY DESC(?instanceCount)
 `
+
+export const objectsByClassificationQuery = `
+ SELECT ?category ?prefLabel
+ (COUNT(DISTINCT ?object) as ?instanceCount)
+  WHERE {
+    <FILTER>
+    ?object a :Object .
+    ?object :classification ?category .
+    BIND (CONCAT(?category, ' ') AS ?prefLabel )
+  }
+  GROUP BY ?category ?prefLabel
+  ORDER BY DESC(?instanceCount)
+`
+
+export const objectsByOrganizationQuery = `
+ SELECT ?category ?prefLabel
+ (COUNT(DISTINCT ?object) as ?instanceCount)
+  WHERE {
+    <FILTER>
+    ?object a :Object .
+    ?object :responsibleOrganisation ?category .
+    BIND (CONCAT(?category, ' ') AS ?prefLabel )
+  }
+  GROUP BY ?category ?prefLabel
+  ORDER BY DESC(?instanceCount)
+`
+
+export const objectsByKeywordQuery = `
+ SELECT ?category ?prefLabel
+ (COUNT(DISTINCT ?object) as ?instanceCount)
+  WHERE {
+    <FILTER>
+    ?object a :Object .
+    ?object :keyword ?category .
+    BIND (CONCAT(?category, ' ') AS ?prefLabel )
+  }
+  GROUP BY ?category ?prefLabel
+  ORDER BY DESC(?instanceCount)
+`

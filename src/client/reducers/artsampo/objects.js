@@ -134,8 +134,7 @@ export const INITIAL_STATE = {
 }
 
 const resultClasses = new Set([
-  'objects', 'objectsByMaterial', 'objectsByArtist'
-])
+  'objects', 'objectsByMaterial', 'objectsByArtist', 'objectsByOrganization', 'objectsByClassification', 'objectsByKeyword'])
 
 const objects = (state = INITIAL_STATE, action) => {
   if (resultClasses.has(action.resultClass)) {
