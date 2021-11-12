@@ -7,15 +7,6 @@ Based on the Sampo-UI framework (https://github.com/SemanticComputing/sampo-ui).
 The Sampo-UI framework is being developed by the [Semantic Computing Research Grou)p (SeCo)](https://seco.cs.aalto.fi)
 at the Aalto University, Finland. See the [research page](https://seco.cs.aalto.fi/tools/sampo-ui) for
 more information.
-
-## Design philosophy
-
-Sampo-UI offers a comprehensive "starting base" of a full stack JavaScript web application.
-Therefore it is not possible to include Sampo-UI as separate component into an existing
-application. The
-most convenient way to build a new user interface using Sampo-UI is to read the documentation
-provided below, fork this repository, and start developing from there.
-
 ## Requirements
 
 * [Node.js® &ndash; a JavaScript runtime built on Chrome's V8 JavaScript engine.](https://nodejs.org/en/) (version 16.13.0)
