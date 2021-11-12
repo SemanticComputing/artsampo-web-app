@@ -37,6 +37,10 @@ export const INITIAL_STATE = {
     placesMsMigrations: {
       center: [22.43, 10.37],
       zoom: 2
+    },
+    casualtiesByMunicipality: {
+      center: [65.184809, 27.314050],
+      zoom: 4
     }
   },
   properties: [
@@ -286,10 +290,13 @@ const resultClasses = new Set([
   'placesMsMigrations',
   'placesMsMigrationsDialog',
   'productionTimespanLineChart',
+  'productionsByDecadeAndCountry',
   'eventLineChart',
   'manuscriptInstancePageNetwork',
   'manuscriptFacetResultsNetwork',
-  'perspective1KnowledgeGraphMetadata'
+  'perspective1KnowledgeGraphMetadata',
+  'speechesByYearAndParty',
+  'casualtiesByMunicipality'
 ])
 
 const perspective1 = (state = INITIAL_STATE, action) => {
