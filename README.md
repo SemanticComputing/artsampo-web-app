@@ -1,13 +1,13 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 # ArtSampo
 
-A semantic portal for open data of the Finnish National Gallery.
+A semantic portal for [open data](https://www.kansallisgalleria.fi/en/api-sovelluskehittajille) of the Finnish National Gallery.
 
-Based on the Sampo-UI framework (https://github.com/SemanticComputing/sampo-ui).
+Based on [Sampo-UI &ndash; A framework for building semantic portal user interfaces](https://github.com/SemanticComputing/sampo-ui)
 
-The Sampo-UI framework is being developed by the [Semantic Computing Research Grou)p (SeCo)](https://seco.cs.aalto.fi)
-at the Aalto University, Finland. See the [research page](https://seco.cs.aalto.fi/tools/sampo-ui) for
-more information.
+The Sampo-UI framework is being developed by the [Semantic Computing Research Group (SeCo)](https://seco.cs.aalto.fi) 
+at the Aalto University, Finland. See the [research page](https://seco.cs.aalto.fi/tools/sampo-ui) for 
+more information. 
 ## Requirements
 
 * [Node.js® &ndash; a JavaScript runtime built on Chrome's V8 JavaScript engine.](https://nodejs.org/en/) (version 16.13.0)
