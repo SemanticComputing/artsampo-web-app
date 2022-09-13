@@ -1,5 +1,5 @@
 {
-    "id": "objects",
+    "id": "persons",
     "endpoint": {
         "url": "http://localhost:3048/ds/sparql",
         "useAuth": false,
@@ -8,8 +8,8 @@
     "sparqlQueriesFile": "SparqlQueriesObjects.js",
     "baseURI": "http://ldf.fi/artsampo",
     "URITemplate": "<BASE_URI>/fng/<LOCAL_ID>",
-    "facetClass": ":Object",
-    "frontPageImage": "main_page/sampo.jpg",
+    "facetClass": ":Person",
+    "frontPageImage": "main_page/helene.jpg",
     "searchMode": "faceted-search",
     "defaultActiveFacets": [
         "prefLabel"
@@ -17,7 +17,7 @@
     "defaultTab": "table",
     "defaultInstancePageTab": "table",
     "resultClasses": {
-        "objects": {
+        "persons": {
             "paginatedResultsConfig": {
                 "tabID": 0,
                 "component": "ResultTable",
