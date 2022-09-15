@@ -57,6 +57,16 @@ export const objectPropertiesInstancePage =
     {
       ?id :yearFrom ?yearFrom .
     }
+    UNION
+    {
+      ?id :hasMultimedia ?image__id .
+      ?image__id :extension ".jpg" .
+      ?image__id :filename ?imageCode  .
+      ?image__id :licence "CC0" .  # Limit to CC0 copyright just in case there are others
+      BIND (CONCAT('https://d3uvo7vkyyb63c.cloudfront.net/1/webp/1000/', ?imageCode) AS ?image__url)
+      BIND ("Kuva" AS ?image__title)
+      BIND ("Kuva" AS ?image__description)
+    }
 `
 
 export const objectPropertiesFacetResults =
@@ -116,12 +126,16 @@ export const objectPropertiesFacetResults =
      {
        ?id :yearFrom ?yearFrom .
      }
-     #UNION
-     #{
-      # ?id ^crm:P46i_forms_part_of ?manuscript__id .
-       #?manuscript__id skos:prefLabel ?manuscript__prefLabel .
-      # BIND(CONCAT("/${perspectiveID}/page/", REPLACE(STR(?manuscript__id), "^.*\\\\/(.+)", "$1")) AS ?manuscript__dataProviderUrl)
-     #}
+     UNION
+     {
+       ?id :hasMultimedia ?image__id .
+       ?image__id :extension ".jpg" .
+       ?image__id :filename ?imageCode  .
+       ?image__id :licence "CC0" .  # Limit to CC0 copyright just in case there are others
+       BIND (CONCAT('https://d3uvo7vkyyb63c.cloudfront.net/1/webp/250/', ?imageCode) AS ?image__url)
+       BIND ("Kuva" AS ?image__title)
+       BIND ("Kuva" AS ?image__description)
+     }
 `
 
 export const knowledgeGraphMetadataQuery = `

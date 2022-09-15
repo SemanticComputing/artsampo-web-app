@@ -247,6 +247,10 @@
           "label": "Creation year",
           "description": "Earliest creation year"
         },
+        "image": {
+          "label": "Image",
+          "description": "Image"
+        },
         "keyword": {
           "label": "Keyword",
           "description": ""
